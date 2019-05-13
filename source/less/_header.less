@@ -20,9 +20,15 @@
 	background: @primary-color;
 	padding: 0 @gap;
 	&, a{
-		color: @white;
+		color: @header-text;
 	}
 	&:extend(.z-depth-1);
+	.logo-icon {
+		width: 36px;
+		height: 36px;
+		float: left;
+		display: block;
+	}
 	.logo {
 		flex: none;
 		padding: 0 @gap;
@@ -37,10 +43,10 @@
 		ul > li > a{
 			.enable-trans();
 			display: block;
-			color: fade(@white,70%);
+			color: fade(@header-text,70%);
 			padding: 0 @gap / 2;
 			&:hover,&.active{
-				color: @white;
+				color: @header-text;
 			}
 		}
 		@media(max-width: @on-phone){
@@ -49,7 +55,7 @@
 		.underline{
 			transition: all .15s ease-out;
 			position: absolute;
-			background: @white;
+			background: fade(@black, 60%);
 			left: 0;
 			bottom: 0;
 			width: 0;
@@ -131,7 +137,7 @@
 		font-family: @base-font-family;
 		border: none;
 		border-radius: 3px;
-		background:fade(@white,15%);
+		background:fade(@header-text,15%);
 		box-sizing: border-box;
 		-webkit-appearance: none;
 		box-shadow: none;
@@ -141,12 +147,12 @@
 		&:focus {
 			color:@black;
 			background: @white;
-			.set-placeholder({color: @black});
+			.set-placeholder({color: fade(@black, 50%)});
 		}
 		&:focus ~ .icon{
 			color: @black;
 		}
-		.set-placeholder({color: @white});
+		.set-placeholder({color: fade(@header-text, 60%)});
 	}
 	
 }

@@ -34,4 +34,20 @@
 </script>
 <%- js('js/search.js') %>
 <%- js('js/app.js') %>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { 
+    L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"c1a90018e0ba282c43243da5b","lid":"1f8332e947","uniqueMethods":true}) 
+  })
+</script>
+<% if (theme.google_analytics_id){ %>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics_id%>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', '<%= theme.google_analytics_id%>');
+</script>
+<% } %>

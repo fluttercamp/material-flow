@@ -125,12 +125,19 @@
     }
     .readmore {
         // display: none; // howtodesign?
-        font-size: 1.2rem;
-        margin-top: @gap;
+        font-size: 1rem;
+        float: right;
+        margin-top: @gap + 10;
+        margin-bottom: @gap - 10; 
         a {
             display: inline-block;
             vertical-align: middle;
             line-height: 2rem;
+            padding: @gap / 2.5;
+            border-radius: @gap / 2.5;
+            &:hover,&:active,&.active{
+                color: @button-red;
+            }
         }
     }
     .tags {

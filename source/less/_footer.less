@@ -7,7 +7,10 @@
   font-size: 14px;
   overflow: hidden;
   text-align: center;
-	background: @black;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-size: 180%;
+	padding-top: 5%;
 	.codename {
 		color: @secondary-color;
 	}
@@ -15,7 +18,7 @@
 		padding-top: 20px;
 	}
   a {
-    color: fade(@white,80%);
+    color: fade(@black,60%);
 
     &:hover {
       background: fade(@accent-color, 10%);
@@ -25,8 +28,8 @@
 	    position: relative;
 	    display: inline-block;
 	    text-align: center;
-	    font-size: 16px;
-	    margin: 0px 5px;
+	    font-size: 24px;
+	    margin: 0px 10px;
 
 	  	&:hover {
 		  	background: transparent;
@@ -45,5 +48,48 @@
 		  	color: @weibo-color;
 	  	}
     }
-  }
+	}
+	.friends-links {
+		 .content-links {
+			 .link {
+				 padding-left: 10px;
+				 padding-right: 10px;
+				 a {
+					padding: 10px;
+					font-size: 14px;
+					line-height: 20px;
+					border-radius: @gap / 2.5;
+					&:hover {
+						background: none;
+						direction: initial;
+					}
+				 }
+			 }
+		 }
+	}
+	.flutter-intro {
+		span {
+			color: fade(@black,60%);
+			font-size: 12px;
+		}
+		a {
+			font-size: 12px;
+			&:hover {
+				background: none;
+				direction: initial;
+			}	
+		}
+	}
+	.beian-wrapper {
+		a {
+			padding: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			border-radius: @gap / 2.5;
+			&:hover {
+				background: none;
+				direction: initial;
+			}
+		 }
+	}
 }

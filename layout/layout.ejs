@@ -3,15 +3,20 @@
   <%- partial('_partial/loading') %>
   <script>setLoadingBarProgress(20)</script> 
   <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    <script>setLoadingBarProgress(40);</script>
+  <script>setLoadingBarProgress(40);</script>
+  <% if (is_home()) { %>
+    <%- partial('_partial/hero') %>
+  <% } %>
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
         <%- body %>
       </div>
+      <% if (is_home()) { %>
       <aside class='l_side'>
         <%- partial('_partial/side') %>
       </aside>
+      <% } %>
       <script>setLoadingBarProgress(60);</script>
     </div>
   </div>

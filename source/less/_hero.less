@@ -1,0 +1,127 @@
+.l_hero {
+    height: @hero-height;
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        background: url("/images/flutter-hero.svg") no-repeat;
+        background-size: cover;
+        background-position-y: 70%;
+        background-position-x: center;
+    }
+    .introduction {
+        position: absolute;
+        height: 400px;
+        top: @hero-height / 5;
+        width: 720px;
+        left: calc(50% - 360px);
+
+        h1 {
+            width: 860px;
+            height: 20%;
+            margin-left: calc(50% - 430px);
+            text-align: center;
+            font-size: 5em;
+            overflow-x: visible;
+            font-weight: normal;
+            margin-bottom: 0.2em;
+            margin-top: 0;
+            white-space: nowrap;
+            color: #404040;
+        }
+
+        p {
+            margin: 0 0 1.5em 0;
+            line-height: 1.85em;
+            padding: 0;
+            font-size: 1em;
+            color: #4a4a4a;
+        }
+
+        .link-buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .link-buttons>div {
+            margin-right: 48px;
+        }
+        
+        
+        .link-buttons>div:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    @media screen {
+         @media (max-width: 1000px) {
+            .introduction {
+                top: calc(30% - 160px);
+                height: 320px;
+                width: 700px;
+                left: calc(50% - 350px);
+
+                h1 {
+                    font-size: 4em;
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        @media (max-width: 800px) {
+            .introduction {
+                top: calc(40% - 160px);
+                height: 320px;
+                width: calc(100% - 64px);
+                left: 32px;
+                h1 {
+                    font-size: 2.5em;
+                    width: 100%;
+                    margin-left: 0;
+                    font-weight: bold;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .introduction {
+                h1 {
+                    font-size: 2em;
+                    width: 100%;
+                    margin-left: 0;
+                    font-weight: bold;
+                    font-weight: 500;
+                    white-space: pre-wrap;
+                    text-align: left;
+                }
+                .link-buttons>div {
+                    margin-right: 16px;
+                }
+                p {
+                    margin: 0 0 1.25em 0;
+                    line-height: 1.75em;
+                    padding: 0;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .introduction {
+                top: calc(30% - 128px);
+                height: 256px;
+                width: calc(100% - 64px);
+                left: 32px;
+
+                h1 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}

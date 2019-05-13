@@ -1,0 +1,380 @@
+@import(css) "https://fonts.googleapis.com/earlyaccess/notosansscsliced.css";
+@import(css) "https://fonts.googleapis.com/css?family=Roboto)";
+
+/*
+  Zhongdong Yang
+  Nov. 25, 2018
+
+  yangzd1996@outlook.com, Parcel Santa Pte Ltd
+  */
+button {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    outline: none;
+    font-family: 'Noto Sans SC Sliced', "Noto Sans", "Roboto", sans-serif;
+}
+
+@keyframes splash-spread {
+    0% {
+        transform: scale3d(0.25, 0.25, 1);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale3d(1.25, 1.25, 1);
+        opacity: 0;
+    }
+}
+
+.md-button-container {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    z-index: 0;
+    font-weight: bold;
+    font-weight: 500;
+    display: inline-block;
+
+    .md-button {
+        display: block;
+        z-index: 1;
+        padding: 0 16px;
+        width: max-content;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: -o-max-content;
+        text-decoration: none;
+        height: 100%;
+        outline: none;
+        cursor: pointer;
+        color: inherit;
+        text-transform: inherit;
+        font-weight: inherit;
+        background-color: transparent;
+        user-select: none;
+        box-sizing: border-box;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+
+        .md-button-splash {
+            z-index: -1;
+            animation: splash-spread linear 350ms 1 forwards;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 100%;
+            position: absolute;
+            opacity: 1;
+        }
+    }
+
+    &.size-radius-xlarge {
+        border-radius: 12px;
+    }
+
+    &.size-radius-large {
+        border-radius: 10px;
+    }
+
+    &.size-radius-medium {
+        border-radius: 8px;
+    }
+
+    &.size-radius-normal {
+        border-radius: 6px;
+    }
+
+    &.size-radius-small {
+        border-radius: 4px;
+    }
+
+    &.size-radius-xsmall {
+        border-radius: 2px;
+    }
+
+    &.size-radius-none {
+        border-radius: 0;
+    }
+
+    &.size-small {
+        height: 38px;
+        font-size: 16px;
+        line-height: 38px;
+        border-radius: 4px;
+    }
+
+    &.size-large {
+        height: 56px;
+        line-height: 56px;
+        font-size: 18px;
+        border-radius: 10px;
+
+        &.flutter-button {
+            padding: 0 24px;
+        }
+    }
+
+    &.font-uppercase {
+        text-transform: uppercase;
+    }
+
+    &.font-lowercase {
+        text-transform: lowercase;
+    }
+
+    &.font-bold {
+        font-weight: bold;
+        font-weight: 600;
+    }
+
+    &.font-light {
+        font-weight: lighter;
+        font-weight: 300;
+    }
+
+    &.font-normal {
+        font-weight: normal;
+        font-weight: 400;
+    }
+
+    &.size-radius-xlarge {
+        border-radius: 12px;
+    }
+
+    &.size-radius-large {
+        border-radius: 10px;
+    }
+
+    &.size-radius-medium {
+        border-radius: 8px;
+    }
+
+    &.size-radius-normal {
+        border-radius: 6px;
+    }
+
+    &.size-radius-small {
+        border-radius: 4px;
+    }
+
+    &.size-radius-xsmall {
+        border-radius: 2px;
+    }
+
+    &.size-radius-none {
+        border-radius: 0;
+    }
+
+    &.size-small {
+        height: 38px;
+        font-size: 16px;
+        line-height: 38px;
+        border-radius: 4px;
+    }
+
+    &.size-large {
+        height: 56px;
+        line-height: 56px;
+        font-size: 18px;
+        border-radius: 10px;
+
+        .flutter-button {
+            padding: 0 24px;
+        }
+    }
+
+    &.font-uppercase {
+        text-transform: uppercase;
+    }
+
+    &.font-lowercase {
+        text-transform: lowercase;
+    }
+
+    &.font-bold {
+        font-weight: bold;
+        font-weight: 600;
+    }
+
+    &.font-light {
+        font-weight: lighter;
+        font-weight: 300;
+    }
+
+    &.font-normal {
+        font-weight: normal;
+        font-weight: 400;
+    }
+
+    &.shadow-0 {
+        box-shadow: none;
+    }
+
+    &.shadow-2 {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &.shadow-4 {
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3), 1px 0 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &.shadow-8 {
+        box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 1px 0 12px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &.shadow-16 {
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1), 3px 0 16px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &.shadow-light {
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &.color-white {
+        background-color: #ffffff;
+        color: #111111;
+
+        .md-button-splash {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &.color-black {
+        background-color: #111111;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &.color-blue {
+        background-color: #2196f3;
+        color: #ffffff;
+
+        .flutter-button-splash {
+            background-color: rgba(200, 200, 200, 0.3);
+        }
+    }
+
+    &.color-red {
+        background-color: #f44336;
+        color: #ffffff;
+
+        &.md-button-splash {
+            background-color: rgba(255, 205, 210, 0.7);
+        }
+    }
+
+    &.color-green {
+        background-color: #4caf50;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(200, 230, 201, 0.8);
+        }
+    }
+
+    &.color-yellow {
+        background-color: #ffeb3b;
+        color: #111111;
+
+        .md-button-splash {
+            background-color: rgba(255, 253, 231, 0.7);
+        }
+    }
+
+    &.color-grey {
+        background-color: #9e9e9e;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(245, 245, 245, 0.6);
+        }
+    }
+
+    &.color-orange {
+        background-color: #ff5722;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(255, 224, 178, 0.6);
+        }
+    }
+
+    &.color-purple {
+        background-color: #9c27b0;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(225, 190, 231, 0.6);
+        }
+    }
+
+    &.color-pink {
+        background-color: #E91E63;
+        color: #ffffff;
+
+        .md-button-splash {
+            background-color: rgba(248, 187, 208, 0.6);
+        }
+    }
+
+    &.type-outline {
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: inherit;
+
+        &.color-red {
+            border-color: #f44336;
+            color: #f44336;
+        }
+    }
+
+    &.type-outline-bold {
+        border-width: 2px;
+    }
+
+    &.type-outline-normal {
+        border-width: 1px;
+    }
+
+    &.type-outline-bolder {
+        border-width: 3px;
+    }
+
+    &.type-icon {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        box-shadow: none;
+
+        &>.md-button {
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &>.md-button>* {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}

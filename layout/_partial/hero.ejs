@@ -1,0 +1,21 @@
+<% if (theme.hero && theme.hero.title) { %>
+<div class="l_hero">
+    <div class="hero-image"></div>
+    <div class="introduction">
+        <h1><%=theme.hero.title %></h1>
+        <% if (theme.hero.desc) { %>
+            <p><%=theme.hero.desc %></p>
+        <% } %>
+         <div class="link-buttons">
+            <% theme.hero_docs.forEach(function(value) {%>
+                <% if (value.text && value.url && value.clss) {%>
+                    <div class="md-button-container size-radius-small <%= value.clss %> size-small shadow-0" id="md-button-4006423"
+                        style="color: <%= value.color %>">
+                        <a class="md-button" href="<%= value.url %>" target="_blank"><%= value.text %></a>
+                     </div>
+                <% } %>
+            <% }); %>
+        </div>
+    </div>
+</div>
+<% } %>

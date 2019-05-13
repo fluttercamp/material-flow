@@ -1,3 +1,21 @@
+logo: images/favicon.ico
+footer_bg: images/flutter-bottom.svg
+
+hero:
+  title: Flutter 1.2 已经发布
+  desc: Flutter 是 Google 用以帮助开发者在 iOS 和 Android 两个平台开发高质量原生 UI 的移动 SDK。Flutter 兼容现有的代码，免费并且开源，在全球开发者中广泛被使用。
+hero_docs:
+  - text: 1.2 更新内容
+    url: https://flutter-io.cn/posts/launching-flutter-12-at-mobile-world.html
+    clss: color-red
+    color: 
+  - text: 官方英文文档
+    url: https://flutter.io/docs
+    clss: color-white
+    color: rgb(244, 67, 54);
+
+google_analytics_id: UA-135552747-1
+
 # Search
 search: 
   enable: true
@@ -18,36 +36,53 @@ search:
 
 # friends link
 links:
-  - name: ClassicOldSong
-    url: https://ccoooss.com
-  - name: Frantic1048
-    url: https://frantic1048.logdown.com/
-  - name: Hclmaster
-    url: https://hclmaster.github.io/
-  - name: WANG Hsü-Tung
-    url: https://whst.github.io/
+  - name: Flutter 社区中文资源
+    url: https://flutter-io.cn/
+  - name: Flutter Gallery
+    url: https://www.coolapk.com/apk/io.flutter.demo.gallery
+  - name: Flutter Codelabs
+    url: https://codelabs.flutter-io.cn/
+  - name: Flutter 官方网站
+    url: https://flutter.dev/
+  - name: DartPad
+    url: https://dartpad.cn/
 
 # navigation menu
 menu:
-  - name: Home
+  - name: 首页
     slug: home
     url: /
-  - name: Archives
+  - name: 归档
     slug: archives
     url: /archives
-  - name: Gallery
-    slug: gallery
-    url: https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN
-  - name: About
+  - name: 订阅
+    slug: subscribe
+    url: /subscribe
+  - name: 关于
     slug: about
     url: /about
+  # - name: 视频资源
+  #   slug: videos
+  #   url: https://flutter-io.cn/#videos
+  # - name: 插件推荐
+  #   slug: plugins
+  #   url: https://flutter-io.cn/#plugins
+  # - name: CodeLabs
+  #   slug: codelabs
+  #   url: https://flutter-io.cn/#codelabs
+  # - name: 中文社区
+  #   slug: community
+  #   url: https://flutter-io.cn/#community
+  # - name: 使用镜像
+  #   slug: cn-mirror
+  #   url: https://flutter-io.cn/#cn-mirror
 
 # widgets
-widgets:
+widgets: 
   - about
-  - links
   - categories
   - tagcloud
+  - links
 
 # Less
 less:
@@ -56,8 +91,22 @@ less:
 # use url, not username
 social:
 - slug: github
-  url: https://github.com/stkevintan
+  url: https://github.com/cfug
 - slug: twitter
-  url: https://twitter.com/kevinsfork
+  url: https://twitter.com/FlutterChina
+- slug: sina-weibo
+  url: https://weibo.com/flutterio
 - slug: rss
 	url: /atom.xml
+
+auto_excerpt:
+  enable: true
+  lines: 5
+
+beian:
+  - type: communication
+    value: 豫ICP备18021312号-1
+    url: http://www.miitbeian.gov.cn/
+  - type: police
+    value: 豫公网安备41010702002474号
+    url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010702002474

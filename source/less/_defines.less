@@ -1,6 +1,6 @@
 // Font families
-@fallback-font-family: Helvetica, "Hiragino Sans GB", "Hiragino Sans GB W3", Source Han Sans CN Regular, WenQuanYi Micro Hei, "Microsoft YaHei", Arial, sans-serif;
-@base-font-family: 'Titillium Web', @fallback-font-family;
+@fallback-font-family: "Helvetica Neue" ,Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+@base-font-family: "Noto Sans SC Sliced", @fallback-font-family;
 @code-font-family: "Roboto Mono",Consolas, monospace, sans-serif;
 
 // Font configuration
@@ -11,6 +11,7 @@
 // Spacing
 @spacing-unit:     30px;
 @gap:              20px;
+@hero-height:      860px;
 
 // Material color scheme
 @material-red: #f44336;
@@ -45,15 +46,24 @@
 @behance-color:    #1769FF;
 @tixora-color:     #33475A;
 
+// Custom Colors
+@header-bg: #FFE4DF;
+@header-shadow: #EAD1CD;
+@header-text: #666666;
+@tag-color: #f05049;
+@tag-bg: #FFE0E0;
+@button-red: #F47470;
+@button-black: #333333;
+
 // Colors
 @black: #414141;
 @white: #ffffff;
 @text-color:       @black;
-@background-color: #EBECEE;
+@background-color: #FFFFFF;
 @brand-color:      @material-teal;
-@accent-color:		 @material-blue;
-@primary-color:    @material-deep-blue;
-@secondary-color:  @material-green;
+@accent-color:		 @tag-color;
+@primary-color:    @header-bg;
+@secondary-color:  @tag-color;
 @grey-color:       #828282;
 @qoute-background-color:#f7f7f7;
 @code-background-color:fade(@black,6%);
